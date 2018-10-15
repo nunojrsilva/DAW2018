@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE manifesto SYSTEM "file:/home/nuno/DAW2018/TPC/TP2/manifesto.dtd">
+<manifesto>
+    <meta>
+        <identificador>
+            WEB2018::pg38420::TP4
+        </identificador>
+        <titulo>
+            Manifesto referente ao TP4 da UC Desenvolvimento de Aplicações WEB
+        </titulo>
+        <dinicio>
+            09-10-2018
+        </dinicio>
+        <dfim>
+            16-10-2018
+        </dfim>
+        <supervisor>
+            <nome>
+                José Carlos Ramalho
+            </nome>
+            <email>jcr@di.uminho.pt</email>
+            <website>http://www4.di.uminho.pt/~jcr</website>
+        </supervisor>
+    </meta>
+    <equipa>
+        <membro>
+            <nome>Nuno José Ribeiro da Silva</nome>
+            <email>pg38420@alunos.uminho.pt</email>
+            <identificador>pg38420</identificador>
+        </membro>
+    </equipa>
+    <resumo>
+        <para>
+            <i>Node.js</i> é uma framework <i>open-source</i> e que usa <i>JavaScript</i> no lado do servidor. A principal motivação do <i>Node.js</i> é a criação de aplicações de alta escalabilidade e com grande eficiência, sendo um dos grandes trunfos o uso de programação <b>não-assíncrona</b>.
+        </para>
+        <para>
+            O trabalho de casa baseou-se no desenvolvimento de um servidor <i>web</i> em <i>Node.js</i> relativo aos arqueossítios do Noroeste português. Foi também sugerida a adaptação das <i>webpages</i> sobre o mesmo tema geradas anteriormente para que pudessem ser servidas pela nossa aplicação.
+        </para> 
+    </resumo>
+    <resultados>
+        <resultado url="https://github.com/nunojrsilva/DAW2018">
+            Repositório do Github com o código referente ao TPC
+        </resultado>
+        <resultado url="manifesto-tp4.xml">
+            Manifesto para o TP4 em formato XML
+        </resultado>
+    </resultados>
+</manifesto>
