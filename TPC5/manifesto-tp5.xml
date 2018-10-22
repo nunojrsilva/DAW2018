@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE manifesto SYSTEM "file:/home/nuno/Dropbox/Mestrado/4 ANO/DAW/Aulas/TPC/TPC2/manifesto.dtd">
+<manifesto>
+    <meta>
+        <identificador>
+            WEB2018::pg38420::TP5
+        </identificador>
+        <titulo>
+            Manifesto referente ao TP4 da UC Desenvolvimento de Aplicações WEB
+        </titulo>
+        <dinicio>
+            09-10-2018
+        </dinicio>
+        <dfim>
+            16-10-2018
+        </dfim>
+        <supervisor>
+            <nome>
+                José Carlos Ramalho
+            </nome>
+            <email>jcr@di.uminho.pt</email>
+            <website>http://www4.di.uminho.pt/~jcr</website>
+        </supervisor>
+    </meta>
+    <equipa>
+        <membro>
+            <nome>Nuno José Ribeiro da Silva</nome>
+            <email>pg38420@alunos.uminho.pt</email>
+            <identificador>pg38420</identificador>
+            <foto path="pg38420.jpg">Foto</foto>
+        </membro>
+    </equipa>
+    <resumo>
+        <para>O trabalho prático desta semana tinha como objetivo a implementação de um servidor em <i>Node.JS</i> capaz de servir um website gerado com o <i>dataset</i> em formato <i>JSON</i> de um arquivo musical. Em primeiro lugar foi necessário gerar um ficheiro <i>JSON</i> para servir de índice ao nosso <i>website</i>, algo que foi alcançado usando um <i>script</i> em <i>Python</i>
+            Para a geração do <i>HTML</i> dinamicamente foi usada a <i>framework</i> <i>PUG</i>.</para>
+        <para></para>
+    </resumo>
+    <resultados>
+        <resultado url="https://github.com/nunojrsilva/DAW2018">Repositório do GitHub contendo os resultados do trabalho</resultado>
+        <resultado url="manifesto-tp5.xml">Manifesto em formato XML</resultado>
+    </resultados>
+</manifesto>

@@ -1,0 +1,15 @@
+{
+  "name": "tpc5",
+  "version": "1.0.0",
+  "description": "TPC numero 5",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "author": "Nuno Silva",
+  "license": "ISC",
+  "dependencies": {
+    "pug": "^2.0.3"
+  }
+}

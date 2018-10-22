@@ -1,0 +1,31 @@
+extends layout
+
+block corpo
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-light-grey
+                h1= p.titulo
+            .w3-container
+                p="Tipo:" + p.tipo
+                p="Compositor:" + p.compositor
+            .w3-container 
+                h2 Instrumentos
+                table.w3-table.w3-bordered
+                    each elem in p.instrumentos
+                        tr
+                            th Nome
+                            td=elem.nome
+                        tr 
+                            th Partitura
+                            td
+                                ul
+                                    if elem.partitura.path
+                                        li="Path: " + elem.partitura.path
+                                    if elem.partitura.voz
+                                        li="Voz: " + elem.partitura.voz
+                                    if elem.partitura.clave
+                                        li="Clave: " + elem.partitura.clave
+
+            footer.w3-container.w3-light-grey
+                address Gerado por XYZ 
+                a(href='http://localhost:5000') Voltar à página principal
