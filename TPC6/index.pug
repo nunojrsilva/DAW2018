@@ -1,0 +1,55 @@
+extends layout
+block content
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-teal
+                h3 Tarefas Pendentes
+            .w3-container
+                table.w3-table-all
+                    tr
+                        th Nome
+                        th Data de Registo
+                        th Descricao
+                        th Tipo
+                        th Prazo
+                        
+                    
+                    each tarefa,index in lista 
+                        if tarefa.estado == "ativa"
+                            tr
+                                td
+                                    a(href='/tarefa/'+ index)=tarefa.nome
+                                td= tarefa.dataRegisto
+                                td= tarefa.descricao
+                                td= tarefa.tipo
+                                td= tarefa.prazo
+        .w3-card-4
+            header.w3-container.w3-teal
+                h3 Tarefas Concluídas
+            .w3-container
+                table.w3-table-all
+                    tr
+                        th Nome
+                        th Data de Registo
+                        th Descricao
+                        th Tipo
+                        th Prazo
+                        
+                    
+                    each tarefa,index in lista 
+                        if tarefa.estado != "ativa"
+                            tr
+                                td
+                                    a(href='/tarefa/'+ index)=tarefa.nome
+                                td= tarefa.dataRegisto
+                                td= tarefa.descricao
+                                td= tarefa.tipo
+                                td= tarefa.prazo
+
+                    
+            .w3-container
+                .w3-button.w3-black.w3-border
+                    a(href="/registo") Registar nova tarefa
+
+            footer.w3-container.w3-teal
+                adress Gerado por To-Do App

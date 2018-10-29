@@ -1,0 +1,33 @@
+
+
+extends layout
+block content
+    - var url = '/apagar/' + id
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-teal
+                h3 Tarefa
+            .w3-container
+                ul.w3-ul
+                    li
+                        p="Nome: " + tarefa.nome 
+                    li
+                        p="Data de registo: " + tarefa.dataRegisto
+                    li
+                        p="Descricao: " + tarefa.descricao
+                    li
+                        p="Tipo: " + tarefa.tipo
+                    li
+                        p="Prazo: " + tarefa.prazo
+                    li
+                        p="Estado: " + tarefa.estado
+                        
+            .w3-container
+                .w3-button.w3-black.w3-border.w3-right
+                    a(href="/") Página inicial
+                if tarefa.estado!="apagada"
+                    .w3-button.w3-black.w3-border.w3-left
+                        a(href=url) Apagar Tarefa
+            
+            footer.w3-container.w3-teal
+                adress Gerado por To-Do App

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE manifesto SYSTEM "file:/home/nuno/Dropbox/Mestrado/4 ANO/DAW/Aulas/TPC/TPC2/manifesto.dtd">
+<manifesto>
+    <meta>
+        <identificador>
+            WEB2018::pg38420::TP6
+        </identificador>
+        <titulo>
+            Manifesto referente ao TP6 da UC Desenvolvimento de Aplicações WEB
+        </titulo>
+        <dinicio>
+            23-10-2018
+        </dinicio>
+        <dfim>
+            30-10-2018
+        </dfim>
+        <supervisor>
+            <nome>
+                José Carlos Ramalho
+            </nome>
+            <email>jcr@di.uminho.pt</email>
+            <website>http://www4.di.uminho.pt/~jcr</website>
+        </supervisor>
+    </meta>
+    <equipa>
+        <membro>
+            <nome>Nuno José Ribeiro da Silva</nome>
+            <email>pg38420@alunos.uminho.pt</email>
+            <identificador>pg38420</identificador>
+            <foto path="pg38420.jpg">Foto</foto>
+        </membro>
+    </equipa>
+    <resumo>
+        <para>O trabalho prático desta semana tinha como objetivo a implementação de um servidor em <i>Node.JS</i> capaz de servir um website para implementação de um gestor de tarefas. Devia ser possível registar tarefas, indicando nome, data de registo, descrição, tipo em que se inserem e prazo de conclusão. Deveria também ser permitido apagar uma tarefa. Para garantir a persistência dos dados, as tarefas e seus respetivos campos são armazenados como objetos num ficheiro <i>JSON</i>.
+            Para a geração do <i>HTML</i> dinamicamente foi usada , à semelhança da semana anterior, a <i>framework</i> <i>PUG</i>.</para>
+        <para></para>
+    </resumo>
+    <resultados>
+        <resultado url="https://github.com/nunojrsilva/DAW2018">Repositório do GitHub contendo os resultados do trabalho</resultado>
+        <resultado url="manifesto-tp6.xml">Manifesto em formato XML</resultado>
+    </resultados>
+</manifesto>
