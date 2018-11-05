@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE manifesto SYSTEM "file:/home/nuno/DAW/Aulas/TPC/TPC2/manifesto.dtd">
+<manifesto>
+    <meta>
+        <identificador>
+            WEB2018::pg38420::TP7
+        </identificador>
+        <titulo>
+            Manifesto referente ao TP7 da UC Desenvolvimento de Aplicações WEB
+        </titulo>
+        <dinicio>
+            30-10-2018
+        </dinicio>
+        <dfim>
+            05-11-2018
+        </dfim>
+        <supervisor>
+            <nome>
+                José Carlos Ramalho
+            </nome>
+            <email>jcr@di.uminho.pt</email>
+            <website>http://www4.di.uminho.pt/~jcr</website>
+        </supervisor>
+    </meta>
+    <equipa>
+        <membro>
+            <nome>Nuno José Ribeiro da Silva</nome>
+            <email>pg38420@alunos.uminho.pt</email>
+            <identificador>pg38420</identificador>
+            <foto path="pg38420.jpg">Foto</foto>
+        </membro>
+    </equipa>
+    <resumo>
+        <para>O trabalho prático desta semana tinha como objetivo a implementação de um servidor em <i>Node.JS</i> capaz de servir um website para upload de ficheiros para um servidor. Devia ser possível fazer upload do ficheiro, indicando o respetivo ficheiro e uma descrição do seu conteúdo. Para garantir a persistência dos dados, é guardado um catálogo em ficheiro <i>JSON</i> com o nome do ficheiro, descrição, a sua localização e data de <i>upload</i>.
+            Esse catálogo era apresentado aquando da submissão de um ficheiro e é possível servir estaticamente esse conteúdo.
+            Para a geração dinâmica do <i>HTML</i> foi usada a <i>framework</i> <i>PUG</i>. Usamos tambem o <i>Express</i> para simplificar o código no servidor.</para>
+        <para></para>
+    </resumo>
+    <resultados>
+        <resultado url="https://github.com/nunojrsilva/DAW2018">Repositório do GitHub contendo os resultados do trabalho</resultado>
+        <resultado url="manifesto-tp7.xml">Manifesto em formato XML</resultado>
+    </resultados>
+</manifesto>
