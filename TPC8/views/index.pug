@@ -1,0 +1,30 @@
+extends layout
+
+block content
+  .w3-container
+    .w3-card-4
+      header.w3-container.w3-teal
+        h3 FileUpload (nodeJS)
+      .w3-container
+        h3 Novo Ficheiro
+        form.w3-container(id='myFileForm')
+          fieldset
+            label
+              b Ficheiro
+            input.w3-input(type="file" name="ficheiro" id="ficheiro" required)
+
+            label
+              b Descricao  
+            input.w3-input.w3-border(type="text" name="descricao" id="descricao" required)
+            div
+              p
+              button.w3-button.w3-round-large.w3-teal(type="button" id="adicionar") Adicionar Ficheiro
+              p        
+        .w3-container
+          h3 Lista de Ficheiros recebidos
+          .w3-table-all(id="tabela")
+            tr
+              th Ficheiro
+              th Descricao
+      footer.w3-container.w3-teal
+        address Gerado por AjaxApp
