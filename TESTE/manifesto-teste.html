@@ -1,0 +1,126 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="utf-8"><style>
+                    table, td {
+                    border: 2px solid black;
+                    border-collapse: collapse;
+                    }
+                    
+                    td {
+                    padding: 20px;
+                    text-align: center;
+                    }
+                    tr:nth-child(even){
+                    background-color:lightgray;
+                    }
+                    tr:nth-child(odd){
+                    background-color:beige;
+                    }
+                </style></head>
+   <body>
+      <h1> Manifesto </h1>
+      
+      <table>
+         
+         <tr>
+            <td>
+               ID
+               
+            </td>
+            <td>WEB2018-dweb2019-e1</td>
+         </tr>
+         
+         <tr>
+            <td>
+               Título
+               
+            </td>
+            <td>Manifesto referente ao teste da UC Desenvolvimento de Aplicações WEB </td>
+         </tr>
+         
+         <tr>
+            <td>
+               Data de início
+               
+            </td>
+            <td>15/01/2019</td>
+         </tr>
+         
+         <tr>
+            <td>
+               Data de fim
+               
+            </td>
+            <td>15/01/2019</td>
+         </tr>
+         
+         <tr>
+            <td>
+               Supervisor
+               
+            </td>
+            <td>José Carlos Ramalho - <a href="mailto:jcr@di.uminho.pt">jcr@di.uminho.pt</a></td>
+         </tr>
+         
+      </table>
+      
+      <h2>
+         Equipa
+         
+      </h2>
+      <ol>
+         
+         <li>Nuno José Ribeiro da Silva - <a href="mailto:pg38420@alunos.uminho.pt">pg38420@alunos.uminho.pt</a> - pg38420
+         </li>
+         
+      </ol>
+      
+      <h2>
+         Resumo
+         
+      </h2>
+      <div>
+         
+         <p>Pergunta 1</p>
+         
+         <p>Usei um conversor online xml -&gt; json.
+            Importei o ficheiro para uma base de dados mongo com mongoimport -h localhost:27017
+            -d teste -c compositores --file dataset.json --jsonArray
+            Para arrancar a aplicação basta fazer o mesmo e ter o daemon do mongo a correr.
+         </p>
+         
+         <p>Pergunta 2)</p>
+         
+         <p> Existem 22 processos de nivel 3.
+            Usei http://clav-test.di.uminho.pt/api/classes/nivel/3, e com um find vi quantos começavam
+            com "200". Como 
+            para estarem ali, têm de ter nivel 3, foi so colocar num ficheiro. 
+         </p>
+         
+         <p> Existem 116 processos de nivel 4. Usei http://clav-test.di.uminho.pt/api/classes/nivel/4.</p>
+         
+         <p> Primeiro fui buscar todos os processos de nivel 4. Depois, usando uma expressao regular
+            e o grep, retirei todos os códigos mas só as 3 primeiras coordenadas.
+            A seguir usei uniq para remover repeticoes e wc para contar os que ficaram.
+            
+            cat 2pergunta.json | grep -o '"[0-9][0-9][0-9][.][0-9][0-9][.][0-9][0-9][0-9][.]'
+            | uniq | wc
+         </p>
+         
+      </div>
+      
+      <h2>
+         Resultados do Trabalho
+         
+      </h2>
+      <ul>
+         
+         <li><a href="manifesto-tp2.xml"> Versao XML do Manifesto</a></li>
+         
+         <li><a href="https://github.com/nunojrsilva/DAW2018"> Link para o Github</a></li>
+         
+      </ul>
+      
+   </body>
+</html>

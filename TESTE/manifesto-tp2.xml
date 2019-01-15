@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE manifesto SYSTEM "file:/home/nuno/DAW/Aulas/TPC/TPC2/manifesto.dtd">
+<manifesto>
+    <meta>
+        <identificador>WEB2018-dweb2019-e1</identificador>
+        <titulo>Manifesto referente ao teste da UC Desenvolvimento de Aplicações WEB </titulo>
+        <dinicio>15/01/2019</dinicio>
+        <dfim>15/01/2019</dfim>
+        <supervisor>
+            <nome>José Carlos Ramalho</nome>
+            <email>jcr@di.uminho.pt</email>
+            
+        </supervisor>
+    </meta>
+    <equipa>
+        <membro>
+            <nome>Nuno José Ribeiro da Silva</nome>
+            <email>pg38420@alunos.uminho.pt</email>
+            <identificador>pg38420</identificador>
+        </membro>
+    </equipa>
+    <resumo>
+        <para>Pergunta 1</para>
+        <para>Usei um conversor online xml -> json.
+            Importei o ficheiro para uma base de dados mongo com mongoimport -h localhost:27017 -d teste -c compositores --file dataset.json --jsonArray
+            Para arrancar a aplicação basta fazer o mesmo e ter o daemon do mongo a correr.</para>
+        <para>Pergunta 2)</para>
+        <para> Existem 22 processos de nivel 3.
+            Usei http://clav-test.di.uminho.pt/api/classes/nivel/3, e com um find vi quantos começavam com "200". Como 
+            para estarem ali, têm de ter nivel 3, foi so colocar num ficheiro. </para>
+        <para> Existem 116 processos de nivel 4. Usei http://clav-test.di.uminho.pt/api/classes/nivel/4.</para>
+        <para> Primeiro fui buscar todos os processos de nivel 4. Depois, usando uma expressao regular e o grep, retirei todos os códigos mas só as 3 primeiras coordenadas.
+            A seguir usei uniq para remover repeticoes e wc para contar os que ficaram.
+            
+            cat 2pergunta.json | grep -o '"[0-9][0-9][0-9][.][0-9][0-9][.][0-9][0-9][0-9][.]' | uniq | wc</para>
+    </resumo>
+    <resultados>
+       <resultado url="manifesto-tp2.xml"> Versao XML do Manifesto</resultado>
+        <resultado url="https://github.com/nunojrsilva/DAW2018"> Link para o Github</resultado>
+    </resultados>
+</manifesto>

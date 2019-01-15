@@ -1,0 +1,21 @@
+
+PERGUNTA 1 
+
+- Usei um conversor online xml -> json.
+Importei o ficheiro para uma base de dados mongo com mongoimport -h localhost:27017 -d teste -c compositores --file dataset.json --jsonArray
+Para arrancar a aplicação basta fazer o mesmo e ter o daemon do mongo a correr.
+
+
+
+PERGUNTA 2
+
+- Existem 22 processos de nivel 3.
+Usei http://clav-test.di.uminho.pt/api/classes/nivel/3, e com um find vi quantos começavam com "200". Como 
+para estarem ali, têm de ter nivel 3, foi so colocar num ficheiro.
+
+- Existem 116 processos de nivel 4. Usei http://clav-test.di.uminho.pt/api/classes/nivel/4.
+
+- Primeiro fui buscar todos os processos de nivel 4. Depois, usando uma expressao regular e o grep, retirei todos os códigos mas só as 3 primeiras coordenadas.
+A seguir usei uniq para remover repeticoes e wc para contar os que ficaram.
+
+cat 2pergunta.json | grep -o '"[0-9][0-9][0-9][.][0-9][0-9][.][0-9][0-9][0-9][.]' | uniq | wc
